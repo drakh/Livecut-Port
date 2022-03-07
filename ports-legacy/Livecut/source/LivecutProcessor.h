@@ -20,7 +20,7 @@
 #ifndef LIVECUT_PROCESSOR_H
 #define LIVECUT_PROCESSOR_H
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "JuceHeader.h"
 #include "BBCutter.h"
 #include "BitCrusher.h"
 #include "Comb.h"
