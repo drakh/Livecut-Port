@@ -20,7 +20,7 @@
 #ifndef PARAM_LABEL_H
 #define PARAM_LABEL_H
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "JuceHeader.h"
 #include "Control.h"
 
 class ParamLabel : public Label, public Control
