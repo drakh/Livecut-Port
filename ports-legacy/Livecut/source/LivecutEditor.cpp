@@ -90,7 +90,8 @@ void LivecutAudioProcessorEditor::addSlider(int paramId,
                                             int col)
 {
   addControl(kParamName, paramId, row, col, 1, 3);
-  addControl(kParamSlider, paramId, row, col+3, 1, 5);
+  addControl(kParamSlider, paramId, row, col+2, 1, 4);
+  addControl(kParamValue, paramID, row, col+6, 1, 3);
 }
 
 void LivecutAudioProcessorEditor::addKnob(int paramId, 
