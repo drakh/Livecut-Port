@@ -20,7 +20,7 @@
 #ifndef PARAM_BUTTON_H
 #define PARAM_BUTTON_H
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "JuceHeader.h"
 #include "Control.h"
 
 class ParamButton : public TextButton, public Control
