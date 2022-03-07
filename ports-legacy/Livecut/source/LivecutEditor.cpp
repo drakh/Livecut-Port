@@ -48,18 +48,18 @@ LivecutAudioProcessorEditor::LivecutAudioProcessorEditor (LivecutAudioProcessor*
   
   setSize (790+10, 480+10);
    
-  /*
+  
   {
     ParamButton *pParamButton = new ParamButton(*ownerFilter, 23);
-    pParamButton->setBounds(margin, toolbarHeight+margin, buttonWidth, buttonHeight);
+    pParamButton->setBounds(385, 195, buttonWidth, buttonHeight);
     addAndMakeVisible(pParamButton);
   }
   {
     ParamButton *pParamButton = new ParamButton(*ownerFilter, 28);
-    pParamButton->setBounds(margin+buttonWidth+margin, toolbarHeight+margin, buttonWidth, buttonHeight);
+    pParamButton->setBounds(385, 345, buttonWidth, buttonHeight);
     addAndMakeVisible(pParamButton);
   }
-  
+  /*
   for(int i=2; i<20; ++i)
   {
     ParamSlider *pParamSlider = new ParamSlider(*ownerFilter, i);
