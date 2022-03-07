@@ -20,7 +20,7 @@
 #ifndef LIVECUT_EDITOR_H
 #define LIVECUT_EDITOR_H
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "JuceHeader.h"
 #include "LivecutProcessor.h"
 
 class LivecutAudioProcessorEditor  : public AudioProcessorEditor
