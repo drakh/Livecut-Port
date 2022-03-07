@@ -46,7 +46,7 @@ LivecutAudioProcessorEditor::LivecutAudioProcessorEditor (LivecutAudioProcessor*
     LookAndFeel::setDefaultLookAndFeel(&LivecutLookAndFeel::getInstance());
   }
   
-  setSize (720+10, 480+10);
+  setSize (790+10, 480+10);
    
   /*
   {
