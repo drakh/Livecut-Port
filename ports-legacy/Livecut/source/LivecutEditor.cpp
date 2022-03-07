@@ -162,18 +162,18 @@ void LivecutAudioProcessorEditor::paintOverChildren (Graphics& g)
 {  
 }
 
-static const char* sectionNames[] = 
-{
-  "Global", "Pitch", "Env", 
-  "CutProc11", "WarpCut", "SQPusher", 
-  "Amplifier", "Crusher", "Comb"
-};
+//static const char* sectionNames[] = 
+//{
+//  "Global", "Pitch", "Env", 
+//  "CutProc11", "WarpCut", "SQPusher", 
+//  "Amplifier", "Crusher", "Comb"
+//};
 
 void LivecutAudioProcessorEditor::paint (Graphics& g)
 {
   g.fillAll (Colours::lightgrey);
   
-  // grid
+  /*  // grid
   for(uint col=0; col<24; ++col)
   {
     int x = 10+col*(20+10);
@@ -195,35 +195,89 @@ void LivecutAudioProcessorEditor::paint (Graphics& g)
     g.setColour(Colours::red.withAlpha(0.1f));
     g.fillRect(0, y, getWidth(), 20);
   }
+  */
     
   g.setColour(Colours::black);
   g.setFont(juce::Font(20.0f, juce::Font::bold));
 
-  g.drawRect(0, 0, getWidth(), 30);
+  g.drawLine(0, 30, getWidth(), 30);
   g.drawFittedText ("Livecut",
                     10, 10, getWidth()-20, 20,
                     Justification::centredLeft, 1);      
 
+  //g.setFont(juce::Font(15.0f, juce::Font::bold));
+  //g.drawFittedText ("Mdsp @ Smartelectronix",
+                    //10, 10, getWidth()-20, 20,
+                    //Justification::centredRight, 1);      
+  
+  g.setColour(Colours::darkblue);
   g.setFont(juce::Font(15.0f, juce::Font::bold));
-  g.drawFittedText ("Mdsp @ Smartelectronix",
-                    10, 10, getWidth()-20, 20,
-                    Justification::centredRight, 1);      
+  g.drawFittedText ("CutProc",
+                    10, 50, getWidth()-20, 20,
+                    Justification::centredLeft, 1); 
   
-  for(uint row=0; row<3; ++row)
-  {
-    int y = 40+150*row;
-    int width = 240-10;
-    int height = 150-10;
-    for(uint col=0; col<3; ++col)
-    {
-      int x = 10 + 240*col;
-      g.drawRect(x, y, width, height);
+  g.drawFittedText ("Global",
+                    10, 110, getWidth()-20, 20,
+                    Justification::centredLeft, 1); 
+                    
+  g.drawFittedText ("Pitch",
+                    10, 260, getWidth()-20, 20,
+                    Justification::centredLeft, 1);
+                    
+  g.drawFittedText ("Env",
+                    10, 350, getWidth()-20, 20,
+                    Justification::centredLeft, 1);
+                    
+  g.drawFittedText ("Amp",
+                    280, 50, getWidth()-20, 20,
+                    Justification::centredLeft, 1);
+                    
+  g.drawFittedText ("BitCrusher",
+                    280, 200, getWidth()-20, 20,
+                    Justification::centredLeft, 1);
+                    
+  g.drawFittedText ("Comb",
+                    280, 350, getWidth()-20, 20,
+                    Justification::centredLeft, 1);
+
+  g.drawFittedText ("CutProc11",
+                    550, 50, getWidth()-20, 20,
+                    Justification::centredLeft, 1);
+                    
+  g.drawFittedText ("WarpCut",
+                    550, 200, getWidth()-20, 20,
+                    Justification::centredLeft, 1);
+                    
+  g.drawFittedText ("SQPusher",
+                    550, 350, getWidth()-20, 20,
+                    Justification::centredLeft, 1);
   
-      String text(sectionNames[row*3+col]);
-      g.drawFittedText (text,
-                        x, y, width, 20,
-                        Justification::centred, 1);      
-    }
-  }
+  g.setColour(Colours::black);
+  g.setFont(juce::Font(14.0f, juce::Font::bold));
+  g.drawFittedText ("Original algorithms by Nick Collins\nhttp://www.cus.cam.ac.uk/~nc272/\nin BBCut library for Supercollider",
+                    550, 385, 220, 100,
+                    Justification::centredLeft, 1);
+
+  //g.setFont(juce::Font(18.0f, juce::Font::bold));
+  //g.drawFittedText ("www.smartelectronix.com",
+                    //10, 450, 200, 50,
+                    //Justification::centredLeft, 1);
+  
+  //for(uint row=0; row<3; ++row)
+  //{
+  //  int y = 40+150*row;
+  //  int width = 240-10;
+  //  int height = 150-10;
+  //  for(uint col=0; col<3; ++col)
+  //  {
+  //    int x = 10 + 240*col;
+  //    g.drawRect(x, y, width, height);
+  //
+  //    String text(sectionNames[row*3+col]);
+  //    g.drawFittedText (text,
+  //                      x, y, width, 20,
+  //                      Justification::centred, 1);      
+  //  }
+  //}
 }
 
