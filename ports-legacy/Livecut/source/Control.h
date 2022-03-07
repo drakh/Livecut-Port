@@ -20,7 +20,7 @@
 #ifndef LIVECUT_CONTROL_H
 #define LIVECUT_CONTROL_H
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "JuceHeader.h"
 
 class Control : public AudioProcessorListener, AsyncUpdater
 {
