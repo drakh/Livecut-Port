@@ -109,7 +109,7 @@ LivecutLookAndFeel::LivecutLookAndFeel()
     ComboBox::textColourId,								0xffFFFFFF,
     ComboBox::arrowColourId,							Colours::lightgrey.getARGB(),
     
-    Label::textColourId,                  0xffFFFFFF,
+    Label::textColourId,                  Colours::black.getARGB(), // 0xffFFFFFF,
     
     Slider::rotarySliderFillColourId,           Colours::darkgrey.getARGB(),
     Slider::rotarySliderOutlineColourId,        0xffB0D1F0,
