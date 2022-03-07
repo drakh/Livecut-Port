@@ -20,7 +20,7 @@
 #ifndef PARAM_SLIDER_H
 #define PARAM_SLIDER_H
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "JuceHeader.h"
 #include "Control.h"
 
 class ParamSlider : public Slider, public Control
