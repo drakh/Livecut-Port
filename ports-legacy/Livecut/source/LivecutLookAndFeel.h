@@ -20,7 +20,7 @@
 #ifndef LIVECUT_LOOKANDFEEL_H
 #define LIVECUT_LOOKANDFEEL_H
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "JuceHeader.h"
 
 //------------------------------------------------------------------------------
 class LivecutLookAndFeel : public LookAndFeel_V3
