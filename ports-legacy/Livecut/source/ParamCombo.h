@@ -20,7 +20,7 @@
 #ifndef PARAM_COMBO_H
 #define PARAM_COMBO_H
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "JuceHeader.h"
 #include "Control.h"
 
 class ParamCombo : public ComboBox, public Control, ComboBoxListener
