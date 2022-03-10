@@ -30,7 +30,7 @@ option('build-vst3',
 
 option('build-legacy-only',
     type: 'boolean',
-    value: false,
+    value: true,
     description: 'Build only legacy libraries and plugins',
 )
 
