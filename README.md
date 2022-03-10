@@ -1,5 +1,5 @@
 # Livecut-LV2
-LV2 port of the Livecut beat-slicer audio plugin
+LV2 port of the Livecut beat-slicer audio plugin.
 
 This repository contains modified source code for the Livecut beat-slicer audio plugin, which can be used to build an LV2 version of Livecut. Livecut code originally from https://github.com/mdsp/Livecut with changes here to allow it to build and provide a fully working GUI. As the original source code didn't include a fully working GUI, some of the legacy code has been recycled to build a GUI with access to all parameters, though admittedly the current GUI effort is not pretty (the only reason "www.smartelectronix.com" and "Mdsp @ Smartelectronix" are not displayed in the GUI is because I'm not sure if they'd want to be associated with this GUI).
 
