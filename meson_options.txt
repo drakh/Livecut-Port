@@ -1,0 +1,43 @@
+option('optimizations',
+    type: 'boolean',
+    value: true,
+    description: 'Enable SSE2 optimizations',
+)
+
+option('linux-embed',
+    type: 'boolean',
+    value: false,
+    description: 'DSP-only plugin builds, without editor/GUI',
+)
+
+option('build-lv2',
+    type: 'boolean',
+    value: true,
+    description: 'Build LV2 plugin variants',
+)
+
+option('build-vst2',
+    type: 'boolean',
+    value: false,
+    description: 'Build VST2 plugin variants',
+)
+
+option('build-vst3',
+    type: 'boolean',
+    value: false,
+    description: 'Build VST3 plugin variants',
+)
+
+option('build-legacy-only',
+    type: 'boolean',
+    value: false,
+    description: 'Build only legacy libraries and plugins',
+)
+
+option('plugins',
+    type : 'array',
+    description: 'Plugins to build',
+    choices : [
+        'Livecut',
+    ],
+)
