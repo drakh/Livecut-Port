@@ -114,12 +114,12 @@ LivecutLookAndFeel::LivecutLookAndFeel()
     Slider::rotarySliderFillColourId,           Colours::darkgrey.getARGB(),
     Slider::rotarySliderOutlineColourId,        0xffB0D1F0,
     Slider::trackColourId, 0xff1E1E1E,
-    Slider::thumbColourId, Colours::lightgrey.getARGB(),
+    Slider::thumbColourId, 0xffF6B648,
     
-    TextButton::buttonColourId,           0xff464646,
-    TextButton::buttonOnColourId,         Colours::royalblue.getARGB(),
-    TextButton::textColourOnId,						0xffFFFFFF,
-    TextButton::textColourOffId,					0xffFFFFFF,			
+    TextButton::buttonColourId,           0xffFFFFFF,
+    TextButton::buttonOnColourId,         0xffF6B648,
+    TextButton::textColourOnId,						Colours::black.getARGB(),
+    TextButton::textColourOffId,					Colours::black.getARGB(),			
   };
   
   for (int i = 0; i < numElementsInArray (standardColours); i += 2)
