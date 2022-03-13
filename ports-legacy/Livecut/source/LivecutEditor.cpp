@@ -199,7 +199,7 @@ void LivecutAudioProcessorEditor::paintOverChildren (Graphics& g)
 
 void LivecutAudioProcessorEditor::paint (Graphics& g)
 {
-  g.fillAll (Colours::lightgrey);
+  g.fillAll (Colours::white);
   
   /*  // grid
   for(uint col=0; col<24; ++col)
@@ -225,7 +225,7 @@ void LivecutAudioProcessorEditor::paint (Graphics& g)
   }
   */
     
-  g.setColour(Colours::black);
+  g.setColour(Colours::darkgrey);
   g.setFont(juce::Font(20.0f, juce::Font::bold));
 
   g.drawLine(0, 30, getWidth(), 30);
@@ -233,12 +233,12 @@ void LivecutAudioProcessorEditor::paint (Graphics& g)
                     10, 10, getWidth()-20, 20,
                     Justification::centredLeft, 1);      
 
-  //g.setFont(juce::Font(15.0f, juce::Font::bold));
-  //g.drawFittedText ("Mdsp @ Smartelectronix",
-                    //10, 10, getWidth()-20, 20,
-                    //Justification::centredRight, 1);      
+  g.setFont(juce::Font(15.0f, juce::Font::bold));
+  g.drawFittedText ("Mdsp @ Smartelectronix",
+                    10, 10, getWidth()-20, 20,
+                    Justification::centredRight, 1);      
   
-  g.setColour(Colours::darkblue);
+  g.setColour(Colour(0xffBA7500));
   g.setFont(juce::Font(15.0f, juce::Font::bold));
   g.drawFittedText ("CutProc",
                     10, 50, getWidth()-20, 20,
@@ -280,16 +280,16 @@ void LivecutAudioProcessorEditor::paint (Graphics& g)
                     550, 350, getWidth()-20, 20,
                     Justification::centredLeft, 1);
   
-  g.setColour(Colours::black);
+  g.setColour(Colours::darkgrey);
   g.setFont(juce::Font(14.0f, juce::Font::bold));
   g.drawFittedText ("Original algorithms by Nick Collins\nhttp://www.cus.cam.ac.uk/~nc272/\nin BBCut library for Supercollider",
                     550, 385, 220, 100,
                     Justification::centredLeft, 1);
 
-  //g.setFont(juce::Font(18.0f, juce::Font::bold));
-  //g.drawFittedText ("www.smartelectronix.com",
-                    //10, 450, 200, 50,
-                    //Justification::centredLeft, 1);
+  g.setFont(juce::Font(18.0f, juce::Font::bold));
+  g.drawFittedText ("www.smartelectronix.com",
+                    10, 450, 200, 50,
+                    Justification::centredLeft, 1);
   
   //for(uint row=0; row<3; ++row)
   //{
