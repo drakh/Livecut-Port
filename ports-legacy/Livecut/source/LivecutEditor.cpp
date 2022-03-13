@@ -119,6 +119,34 @@ void LivecutAudioProcessorEditor::addKnob(int paramId,
   addAndMakeVisible(pSlider);
 }
 
+void LivecutAudioProcessorEditor::addIncDec(int paramId, 
+                                            int row, 
+                                            int col,
+                                            int incDecNumberOfValues)
+
+{
+  AudioProcessor &processor = *getAudioProcessor();
+  
+  int buttonsColSpan = 4;
+  int buttonsRowSpan = 1;
+  int buttonsX = 10+30*(col+2);
+  int buttonsY = 10+30*row;
+  int buttonsWidth = 20 + 30*(buttonsColSpan-1);
+  int buttonsHeight = 20 + 30*(buttonsRowSpan-1);
+  double interval = 1.0 / (incDecNumberOfValues - 1);
+  
+  addControl(kParamName, paramId, row, col, 1, 3);
+  
+  ParamSlider *pSlider = new ParamSlider(processor, paramId); 
+  pSlider->setSliderStyle(Slider::IncDecButtons);
+  pSlider->setRange(0, 1, interval);
+  pSlider->setBounds(buttonsX, buttonsY, buttonsWidth, buttonsHeight);
+  addAndMakeVisible(pSlider);
+  
+  addControl(kParamValue, paramId, row, col+6, 1, 3);
+  
+}
+
 void LivecutAudioProcessorEditor::addControl(int kind, 
                                              int paramId, 
                                              int row, 
