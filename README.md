@@ -5,7 +5,7 @@ This repository contains modified source code for the Livecut beat-slicer audio 
 
 The LV2 version can be built using the DISTRHO-Ports libs and scripts at https://github.com/DISTRHO/DISTRHO-Ports.
 
-One way to build the plugin could be to clone this repository, add DISTRHO-Ports as a submodule, add symbolic links to the libs and scripts folders, then build:
+One way to build the plugin could be to clone this repository, add DISTRHO-Ports as a submodule, add symbolic links to the libs and scripts folders, then build using meson:
 
 On linux the commands would be:
 
