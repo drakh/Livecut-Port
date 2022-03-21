@@ -129,6 +129,6 @@
  #define JucePlugin_AAXDisableMultiMono    0
 #endif
 
-#define JucePlugin_LV2URI               "http://mdsp.smartelectronix.com/"
+#define JucePlugin_LV2URI               "http://mdsp.smartelectronix.com/Livecut"
 
 #endif  // __JUCE_LIVECUT_PLUGIN_CHARACTERISTICS__
