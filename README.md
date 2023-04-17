@@ -13,6 +13,9 @@ On linux the commands would be:
 git clone https://github.com/eventual-recluse/Livecut-LV2.git
 cd Livecut-LV2/
 git submodule add https://github.com/DISTRHO/DISTRHO-Ports.git
+cd DISTRHO-Ports/
+git checkout fe5bf2e87dd440ba98d3e8ac647b8518e2851f74
+cd ..
 ln -s DISTRHO-Ports/libs/ libs
 ln -s DISTRHO-Ports/scripts/ scripts
 meson build --buildtype release
