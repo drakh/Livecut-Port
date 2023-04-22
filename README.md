@@ -23,6 +23,8 @@ ninja -C build
 ```
 After building, the Livecut.lv2 folder should be found in build/ports-legacy
 
+(NOTE: The 'git checkout' step is to restore the DISTRHO-Ports submodule to the 2021-03-15 release.)
+
 
 Livecut
 =======
