@@ -1,3 +1,9 @@
+# This port of Livecut is no longer maintained and this repository will be removed soon.
+
+Try this new version:
+
+https://github.com/eventual-recluse/LiveCut
+
 # Livecut-Port
 An adapted version of the Livecut beat-slicer audio plugin, which can be built as an LV2 plugin with DISTRHO-Ports libs and scripts. 
 
